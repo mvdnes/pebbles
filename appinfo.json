@@ -1,0 +1,38 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "mathijs@vd-nes.nl",
+    "longName": "Tekst klok",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "characterRegex": "[a-zA-Z0-9]",
+                "file": "fonts/RobotoCondensed-Bold.ttf",
+                "name": "FONT_ROBOTO_BOLD_35",
+                "type": "font"
+            },
+            {
+                "characterRegex": "[a-zA-Z0-9]",
+                "file": "fonts/RobotoCondensed-Bold.ttf",
+                "name": "FONT_ROBOTO_BOLD_42",
+                "type": "font"
+            },
+            {
+                "characterRegex": "[a-zA-Z0-9]",
+                "file": "fonts/RobotoCondensed-Light.ttf",
+                "name": "FONT_ROBOTO_LIGHT_35",
+                "type": "font"
+            }
+        ]
+    },
+    "shortName": "Tekst klok",
+    "uuid": "53b2924d-8683-4cfb-93b7-5d0e89e5ab28",
+    "versionCode": 1,
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": true
+    }
+}
