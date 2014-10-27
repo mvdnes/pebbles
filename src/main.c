@@ -15,6 +15,8 @@ static const char* STR_HALF = "half";
 #define FONT_BOLD RESOURCE_ID_FONT_ROBOTO_BOLD_35
 #define FONT_LIGHT RESOURCE_ID_FONT_ROBOTO_LIGHT_35
 #define FONT_LARGE RESOURCE_ID_FONT_ROBOTO_BOLD_42
+    
+#define TEXT_Y_OFFSET -7
 
 static const char* const NUMWORDS[] = {
 	"",
@@ -163,13 +165,13 @@ static void setup_label(Layer *root_layer, TextLayer **layer, int8_t num) {
         start = 0;
         break;
     case 0:
-        start = frame.size.h * 0.25 - halftsize;
+        start = frame.size.h * 0.25 - halftsize + TEXT_Y_OFFSET;
         break;
     case 1:
-        start = frame.size.h * 0.5 - halftsize2;
+        start = frame.size.h * 0.5 - halftsize2 + TEXT_Y_OFFSET;
         break;
     case 2:
-        start = frame.size.h * 0.75 - halftsize;
+        start = frame.size.h * 0.75 - halftsize + TEXT_Y_OFFSET;
         break;
     }
     
