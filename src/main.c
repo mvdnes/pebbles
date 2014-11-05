@@ -63,7 +63,7 @@ static int16_t get_text_size(const char* text, int font_id, GRect frame) {
 static void set_central_text() {
     Layer *root_layer = window_get_root_layer(s_data.window);
     GRect frame = layer_get_frame(root_layer);
-    int16_t start = (frame.size.h - get_text_size(s_data.bufferc, FONT_LARGE, frame)) / 2;
+    int16_t start = (frame.size.h - get_text_size(s_data.bufferc, FONT_LARGE, frame)) / 2 + TEXT_Y_OFFSET;
     layer_set_frame((Layer*)s_data.labelc, GRect(0, start, frame.size.w, frame.size.h));
     
     text_layer_set_text(s_data.labelc, s_data.bufferc);
