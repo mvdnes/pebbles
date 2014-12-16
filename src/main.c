@@ -25,6 +25,7 @@ static struct SizeData {
 #define FONT_LARGE RESOURCE_ID_FONT_ROBOTO_BOLD_42
 
 #define TEXT_Y_OFFSET -7
+#define DATE_CORNER_SIZE 25
 
 static const char* const NUMWORDS[] = {
     NULL,
@@ -202,7 +203,7 @@ static TextLayer* build_label(int16_t starty, int16_t height, int fontid) {
 static TextLayer* build_datelabel() {
     GFont font = fonts_get_system_font(FONT_KEY_GOTHIC_14);
 
-    TextLayer *layer = text_layer_create(GRect(s_sizes.frame.size.w - 20, s_sizes.frame.size.h - 20, 20, 20));
+    TextLayer *layer = text_layer_create(GRect(s_sizes.frame.size.w - DATE_CORNER_SIZE, s_sizes.frame.size.h - DATE_CORNER_SIZE, DATE_CORNER_SIZE, DATE_CORNER_SIZE));
     text_layer_set_background_color(layer, GColorClear);
     text_layer_set_text_color(layer, GColorWhite);
     text_layer_set_font(layer, font);
