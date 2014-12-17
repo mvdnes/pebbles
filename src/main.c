@@ -25,7 +25,7 @@ static struct SizeData {
 #define FONT_LARGE RESOURCE_ID_FONT_ROBOTO_BOLD_42
 
 #define TEXT_Y_OFFSET -7
-#define DATE_CORNER_SIZE 25
+#define DATE_CORNER_SIZE 20
 
 static const char* const NUMWORDS[] = {
     NULL,

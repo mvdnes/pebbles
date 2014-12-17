@@ -10,8 +10,8 @@
         "media": [
             {
                 "characterRegex": "[a-zA-Z0-9]",
-                "file": "fonts/Roboto-Bold.ttf",
-                "name": "FONT_ROBOTO_BOLD_35",
+                "file": "fonts/Roboto-Light.ttf",
+                "name": "FONT_ROBOTO_LIGHT_35",
                 "type": "font"
             },
             {
@@ -22,8 +22,8 @@
             },
             {
                 "characterRegex": "[a-zA-Z0-9]",
-                "file": "fonts/Roboto-Light.ttf",
-                "name": "FONT_ROBOTO_LIGHT_35",
+                "file": "fonts/Roboto-Bold.ttf",
+                "name": "FONT_ROBOTO_BOLD_35",
                 "type": "font"
             }
         ]
